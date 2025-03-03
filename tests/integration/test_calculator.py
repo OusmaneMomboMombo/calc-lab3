@@ -1,11 +1,12 @@
 import pytest
 import os
 import sys
+from src.calculator import perform_calculation
 
 # Ajouter la racine du projet au chemin Python
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 sys.path.insert(0, project_root)
-from src.calculator import perform_calculation
+
 
 def test_perform_calculation_addition():
     assert perform_calculation(1, 2, 3) == 5

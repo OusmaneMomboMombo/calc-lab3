@@ -1,4 +1,5 @@
-from utils import add, subtract, multiply, divide
+from src.utils import add, subtract, multiply, divide
+
 
 def get_user_input():
     """Demande à l'utilisateur de choisir une opération et de saisir deux nombres."""
@@ -21,6 +22,7 @@ def get_user_input():
         print(f"Erreur : {e}")
         return None
 
+
 def perform_calculation(choice, num1, num2):
     """Effectue le calcul en fonction du choix de l'utilisateur."""
     if choice == 1:
@@ -34,6 +36,7 @@ def perform_calculation(choice, num1, num2):
             return divide(num1, num2)
         except ValueError as e:
             return str(e)
+
 
 def main():
     """Fonction principale pour exécuter la calculatrice."""
@@ -50,6 +53,7 @@ def main():
         if another_calculation != 'o':
             print("Merci d'avoir utilisé la calculatrice. Au revoir !")
             break
+
 
 if __name__ == "__main__":
     main()
