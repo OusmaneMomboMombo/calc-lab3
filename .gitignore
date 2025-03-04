@@ -1,0 +1,11 @@
+# Ignorer les dossiers __pycache__
+__pycache__/
+
+# Ignorer le cache de pytest
+.pytest_cache/
+
+# Ignorer l'environnement virtuel
+venv_calculator_project/
+
+# Ignorer le fichier de couverture de test
+.coverage
